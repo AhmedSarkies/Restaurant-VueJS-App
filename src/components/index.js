@@ -1,0 +1,10 @@
+export { default as HeaderVue } from "./HeaderVue.vue";
+export { default as LandingHeroVue } from "./LandingHeroVue.vue";
+export { default as CategoriesVue } from "./CategoriesVue.vue";
+export { default as CategoryCard } from "./CategoryCard.vue";
+export { default as SpecialDishes } from "./SpecialDishes.vue";
+export { default as DishesCard } from "./DishesCard.vue";
+export { default as TestimonialsVue } from "./TestimonialsVue.vue";
+export { default as ServicesVue } from "./ServicesVue.vue";
+export { default as CardServices } from "./CardServices.vue";
+export { default as FooterVue } from "./FooterVue.vue";
