@@ -176,10 +176,6 @@ export default {
       padding: 20px;
       background-color: #fff;
       width: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
       transition: all 0.5s ease-in-out;
     }
 
