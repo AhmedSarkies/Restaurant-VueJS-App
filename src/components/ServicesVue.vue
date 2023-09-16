@@ -81,7 +81,7 @@ export default {
 
 <template>
   <div class="services container">
-    <div class="services-left">
+    <div class="services-left col-xs-12">
       <p class="services-header">Our Story & Services</p>
       <p class="services-title">Our Culinary Journey And Services</p>
       <p class="services-content">
@@ -102,6 +102,16 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1400px) {
+    gap: 50px;
+    flex-direction: column;
+
+    .services-title,
+    .services-content {
+      width: 100% !important;
+    }
+  }
 
   .services-header {
     color: #ff6868;

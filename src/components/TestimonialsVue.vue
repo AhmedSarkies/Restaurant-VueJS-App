@@ -126,6 +126,12 @@ export default {
   align-items: center;
   gap: 240px;
 
+  @media (max-width: 1400px) {
+    gap: 120px;
+    flex-direction: column;
+    padding-top: 150px;
+  }
+
   .left-side {
     position: relative;
     display: flex;

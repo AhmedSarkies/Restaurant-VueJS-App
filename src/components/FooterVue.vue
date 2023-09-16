@@ -42,59 +42,63 @@ export default {
 </script>
 
 <template>
-  <div class="footer container">
-    <div class="header-section">
-      <div class="who-are-we">
-        <div class="logo-container">
-          <span class="layout">
-            <img class="logo logo-f" src="@/assets/img/F.svg" alt="" />
-          </span>
-          <img class="logo logo-oodi" src="@/assets/img/oodi.svg" alt="" />
+  <div class="container">
+    <div class="footer">
+      <div class="header-section">
+        <div class="who-are-we">
+          <div class="logo-container">
+            <span class="layout">
+              <img class="logo logo-f" src="@/assets/img/F.svg" alt="" />
+            </span>
+            <img class="logo logo-oodi" src="@/assets/img/oodi.svg" alt="" />
+          </div>
+          <p class="desc">
+            Savor the artistry where every dish is a culinary masterpiece
+          </p>
         </div>
-        <p class="desc">
-          Savor the artistry where every dish is a culinary masterpiece
-        </p>
+        <div class="right-section">
+          <div class="useful-links">
+            <ul>
+              <li class="title">Useful links</li>
+              <li>About us</li>
+              <li>Events</li>
+              <li>Blogs</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+          <div class="main-menu">
+            <ul>
+              <li class="title">Main Menu</li>
+              <li>Home</li>
+              <li>Offers</li>
+              <li>Menus</li>
+              <li>Reservation</li>
+            </ul>
+          </div>
+          <div class="contact-us">
+            <ul>
+              <li class="title">Contact Us</li>
+              <li>example@email.com</li>
+              <li>+64 958 248 966</li>
+              <li>Social media</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="useful-links">
-        <ul>
-          <li class="title">Useful links</li>
-          <li>About us</li>
-          <li>Events</li>
-          <li>Blogs</li>
-          <li>FAQ</li>
-        </ul>
-      </div>
-      <div class="main-menu">
-        <ul>
-          <li class="title">Main Menu</li>
-          <li>Home</li>
-          <li>Offers</li>
-          <li>Menus</li>
-          <li>Reservation</li>
-        </ul>
-      </div>
-      <div class="contact-us">
-        <ul>
-          <li class="title">Contact Us</li>
-          <li>example@email.com</li>
-          <li>+64 958 248 966</li>
-          <li>Social media</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-section row">
-      <div class="social-media-container col-lg-4">
-        <span
-          class="social-icon"
-          v-for="social in socialMedia"
-          :key="social.id"
-          v-html="social.icon"
-        ></span>
-      </div>
-      <div class="copyright-container col-lg-8">
-        <p class="copyright">
-          Copyright &copy; 2023 Dscode | All rights reserved
-        </p>
+      <div class="footer-section">
+        <div class="social-media-container col-lg-4">
+          <span
+            class="social-icon"
+            v-for="social in socialMedia"
+            :key="social.id"
+            v-html="social.icon"
+          ></span>
+        </div>
+        <div class="copyright-container col-lg-8">
+          <p class="copyright">
+            Copyright &copy; 2023 Dscode | All rights reserved
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -108,6 +112,15 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: start;
+
+    @media (max-width: 992px) {
+      align-items: center;
+      flex-direction: column;
+      .who-are-we,
+      .desc {
+        width: 100% !important;
+      }
+    }
 
     .who-are-we {
       .layout {
@@ -132,26 +145,39 @@ export default {
       }
     }
 
-    .useful-links,
-    .main-menu,
-    .contact-us {
-      ul {
-        li {
-          margin-bottom: 30px;
-          color: #555;
-          font-family: Inter;
-          font-size: 24px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
+    .right-section {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
 
-          &.title {
-            color: #000;
+      @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .useful-links,
+      .main-menu,
+      .contact-us {
+        ul {
+          li {
+            margin-bottom: 30px;
+            color: #555;
             font-family: Inter;
-            font-size: 26px;
+            font-size: 24px;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 500;
             line-height: normal;
+
+            &.title {
+              color: #000;
+              font-family: Inter;
+              font-size: 26px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+            }
           }
         }
       }
@@ -163,6 +189,11 @@ export default {
     display: flex;
     justify-content: start;
     align-items: center;
+
+    @media (max-width: 992px) {
+      padding-top: 40px;
+      flex-direction: column;
+    }
 
     .social-media-container {
       .social-icon {

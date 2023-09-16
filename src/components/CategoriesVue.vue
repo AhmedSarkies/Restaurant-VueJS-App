@@ -82,7 +82,7 @@ export default {
     padding: 0;
     .row {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       gap: 30px;
     }

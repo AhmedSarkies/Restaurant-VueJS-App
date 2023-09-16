@@ -178,7 +178,8 @@ export default {
 
   .container-body {
     .row {
-      gap: 50px;
+      justify-content: center;
+      gap: 30px;
     }
   }
 }

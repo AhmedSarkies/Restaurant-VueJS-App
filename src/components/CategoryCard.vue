@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-  <div class="card col-lg-3 col-md-6 col-sm-12">
+  <div class="card col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12">
     <div class="card-header">
       <img :src="category.img" alt="" />
     </div>

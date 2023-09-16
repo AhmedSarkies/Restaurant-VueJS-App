@@ -1,5 +1,5 @@
 <template>
-  <div class="card col-lg-3 col-md-6 col-sm-12">
+  <div class="card col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12">
     <span class="fav">
       <svg
         xmlns="http://www.w3.org/2000/svg"
