@@ -1,7 +1,7 @@
 # Restaurant VueJS App
 
 ### I used the UI from the Figma website.
-#### [UI Design](https://shorturl.at/ADOV9)
+#### [UI Design](https://www.figma.com/file/oFVK4ormdKxtvxiyXjfAza/Restaurant-Website-UI-Template-(Community)?type=design&node-id=0%3A1&mode=design&t=08SzVRgWvY72KCon-1)
 
 ![UI Design](./src/assets/img/UI.png)
 
